@@ -32,7 +32,7 @@ if selection == 1:
                                     points = int(line.strip())
                                 found = True if content_split[1] in line else False
                         grades.append(int(content_split[2]) * points)
-        print(round(sum(grades)/1000))
+        print(f'{round(sum(grades) / 1000)}%')
 
 
 
@@ -64,7 +64,7 @@ elif selection == 2:
                         content_split = content.split('|')
                         grades.append(int(content_split[2]))
         print(f"Min: {min(grades)}%")
-        print(f"Avg: {(sum(grades)/len(grades))}%")
+        print(f"Avg: {round(sum(grades)/len(grades))}%")
         print(f"Max: {max(grades)}%")
 
 
